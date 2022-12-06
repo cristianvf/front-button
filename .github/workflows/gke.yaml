@@ -38,7 +38,7 @@ jobs:
     #Configure workload identity federation and generate an access token
     - id: 'auth'
       name: 'Authenticate to Google Cloud'
-      uses: 'google-github-actions/auth@v.0.4.0'
+      uses: 'google-github-actions/auth@v0.4.0'
       with:
         token_format: 'access_token'
         workload_identity_provider: 'projects/336041615074/locations/global/workloadIdentityPools/cristian-pool'
