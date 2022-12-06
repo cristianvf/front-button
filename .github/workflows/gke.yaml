@@ -44,5 +44,6 @@ jobs:
         workload_identity_provider: 'projects/336041615074/locations/global/workloadIdentityPools/cristian-pool/providers/github-provider'
         service_account: 'cristianvf-sa@cristianvf.iam.gserviceaccount.com'
 
+
     
     
