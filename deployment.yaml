@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: gke-front-button-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: gke-front-button-app
+  template:
+    metadata:
+      labels:
+        app: gke-front-button-app
+    spec:
+      containers:
+      - name: front-button-app
+        image: LOCATION-gcr.io/PROJECT_ID/IMAGE_NAME:TAG
+        ports:
+        - containerPort: 3000
