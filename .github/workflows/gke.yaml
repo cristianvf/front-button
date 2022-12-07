@@ -35,15 +35,10 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v3
 
-    #Configure workload identity federation and generate an access token
+    # Alternative option - authentication via credentials json
     - id: 'auth'
-      name: 'Authenticate to Google Cloud'
-      uses: 'google-github-actions/auth@v1'
-      with:
-        token_format: 'access_token'
-        workload_identity_provider: '//iam.googleapis.com/projects/336041615074/locations/global/workloadIdentityPools/cristian-pool/providers/github-provider'
-        service_account: 'cristianvf-sa@cristianvf.iam.gserviceaccount.com'
-
-
+        uses: 'google-github-actions/auth@v1'
+        with:
+          credentials_json: '${{ secrets.GCP_CREDENTIALS }}'
     
     
