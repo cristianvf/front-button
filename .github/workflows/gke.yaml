@@ -57,8 +57,8 @@ jobs:
     - run: |-
         gcloud auth print-access-token | docker login -u oauth2accesstoken --password-stdin https://gcr.io
 
-    - run: |-
-        echo ${{steps.auth.outputs}}
+    #- run: |-
+    #    echo ${{steps.auth.outputs}}
 
     #- run: |-
     #    docker login -u oauth2accesstoken --password-stdin https://gcr.io
