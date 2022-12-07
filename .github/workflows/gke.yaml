@@ -58,6 +58,9 @@ jobs:
     - run: |-
         echo ${{steps.auth.outputs.access_token}}
 
+    - run: |-
+        echo $GOOGLE_APPLICATION_CREDENTIALS
+
     #- run: |-
     #    docker login -u oauth2accesstoken --password-stdin https://gcr.io
 
