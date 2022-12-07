@@ -13,7 +13,7 @@ spec:
         app: gke-front-button-app
     spec:
       containers:
-      - name: front-button-app
+      - name: gke-front-button-app
         image: LOCATION-gcr.io/PROJECT_ID/IMAGE_NAME:TAG
         ports:
         - containerPort: 3000
