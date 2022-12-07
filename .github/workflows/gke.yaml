@@ -41,7 +41,7 @@ jobs:
       uses: 'google-github-actions/auth@v1'
       with:
         token_format: 'access_token'
-        workload_identity_provider: 'https://iam.googleapis.com/projects/336041615074/locations/global/workloadIdentityPools/cristian-pool/providers/github-provider'
+        workload_identity_provider: '//iam.googleapis.com/projects/336041615074/locations/global/workloadIdentityPools/cristian-pool/providers/github-provider'
         service_account: 'cristianvf-sa@cristianvf.iam.gserviceaccount.com'
 
 
