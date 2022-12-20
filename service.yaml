@@ -3,9 +3,10 @@ kind: Service
 metadata:
   name: gke-front-button-app-service
 spec:
-  type: LoadBalancer
+  type: ClusterIP
   ports:
     - port: 80
-      targetPort: 3000
+      targetPort: 80
+      protocol: TCP
   selector:
     app: gke-front-button-app

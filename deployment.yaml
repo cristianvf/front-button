@@ -16,4 +16,4 @@ spec:
       - name: gke-front-button-app
         image: LOCATION-gcr.io/PROJECT_ID/IMAGE_NAME:TAG
         ports:
-        - containerPort: 3000
+        - containerPort: 80
