@@ -6,6 +6,7 @@ RUN npm install
 
 COPY . .
 
-EXPOSE 3000
-
 RUN npm run build
+
+FROM nginx:1.17.1-alpine
+COPY build/ /usr/share/nginx/html
