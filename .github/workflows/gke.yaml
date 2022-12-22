@@ -16,7 +16,7 @@ on:
 
 env:
   PROJECT_ID: cristianvf
-  GKE_CLUSTER: my-cluster    # Add your cluster name here.
+  GKE_CLUSTER: cluster-react   # Add your cluster name here.
   GKE_ZONE: us-central1-c   # Add your cluster zone here.
   DEPLOYMENT_NAME: gke-front-button-app # Add your deployment name here.
   IMAGE: static-site
